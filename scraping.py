@@ -5,7 +5,7 @@ from selenium.webdriver.support.ui import Select
 import pandas as pd
 import numpy as np
 
-driver = webdriver.Chrome(r'D:\scraping\chromedriver.exe')
+driver = webdriver.Chrome(r'D:\scraping\chromedriver.exe')  # Optional argument, if not specified will search path.
 driver.get('https://www.cwb.gov.tw/V8/C/D/UVIHistory.html')
 
 time.sleep(2)
