@@ -10,7 +10,7 @@ driver.get('https://www.cwb.gov.tw/V8/C/D/UVIHistory.html')
 
 time.sleep(2)
 
-select = Select(driver.find_element_by_id('Date'))
+select = Select(driver.find_element_by_id('Date'))   #selecting the options from the drop_down form
 op_D = []
 for op in select.options:
     if op.text == '2018 / 12':
@@ -42,7 +42,7 @@ for i in range(len(op_D)):
 
     for row in range(len(rows)):
         # print(row)
-        df = pd.DataFrame(data=[rows[row]], columns=columns) #save to DataFrame by date
+        df = pd.DataFrame(data=[rows[row]], columns=columns)    #save to DataFrame by date
         # print(df.head())
         df['Date'] = rows_D[row]
         print(df.head())
