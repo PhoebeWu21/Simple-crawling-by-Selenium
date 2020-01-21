@@ -3,4 +3,4 @@
 via ChromeDriver 
 (https://chromedriver.chromium.org/getting-started)
 
-using BeautifulSoup
+using BeautifulSoup (https://leemeng.tw/beautifulsoup-cheat-sheet.html)
