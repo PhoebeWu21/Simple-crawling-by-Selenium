@@ -42,7 +42,7 @@ for i in range(len(op_D)):
 
     for row in range(len(rows)):
         # print(row)
-        df = pd.DataFrame(data=[rows[row]], columns=columns)
+        df = pd.DataFrame(data=[rows[row]], columns=columns) #save to DataFrame by date
         # print(df.head())
         df['Date'] = rows_D[row]
         print(df.head())
